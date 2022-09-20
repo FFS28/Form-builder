@@ -1,0 +1,48 @@
+body {
+	color: var(--text-color);
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+.menu-item {
+	@apply py-5 px-4;
+	line-height: 1;
+
+	&:hover {
+		background-color: rgba(black, 0.1);
+	}
+}
+
+.date-picker input {
+	max-width: 150px;
+}
+
+.ql-editor li::before {
+	width: 2em !important;
+}
+
+.ql-editor li.ql-indent-2::before {
+	width: 2.5em !important;
+}
+
+.ql-editor li.ql-indent-3::before {
+	width: 3em !important;
+}
+
+.ql-editor ol,
+.ql-editor ul {
+	padding-left: 0 !important;
+}
+
+.ql-editor ol li.ql-indent-1:before {
+	content: counter(list-0, decimal) '.' counter(list-1, decimal) '. ' !important;
+}
+
+.ql-editor ol li.ql-indent-2:before {
+	content: counter(list-0, decimal) '.' counter(list-1, decimal) '.' counter(list-2, decimal) '. ' !important;
+}
+
+.ql-editor ol li.ql-indent-3:before {
+	content: counter(list-0, decimal) '.' counter(list-1, decimal) '.' counter(list-2, decimal) '.'
+		counter(list-3, decimal) '. ' !important;
+}

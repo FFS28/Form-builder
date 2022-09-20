@@ -1,0 +1,121 @@
+.public .date-picker {
+	input {
+		height: 38px;
+	}
+	span {
+		top: 12px;
+	}
+}
+
+.public .fill-height {
+	min-height: calc(100vh - 350px);
+}
+
+.wysiwyg {
+	@apply leading-normal;
+	& strong {
+		@apply text-black font-bold;
+	}
+	& a {
+		@apply text-black underline  text-gray-600;
+	}
+	& strong a {
+		@apply font-bold;
+	}
+	& h2 {
+		@apply leading-tight text-xl font-bold text-black mb-2 mt-10;
+	}
+	& h3 {
+		@apply leading-tight text-lg font-bold text-black mt-8 -mb-2;
+	}
+	& code {
+		@apply font-mono text-sm inline px-1;
+	}
+	& pre code {
+		@apply block bg-black p-4 rounded;
+	}
+	& blockquote {
+		@apply border-l-4 pl-4 italic;
+	}
+
+	ol {
+		counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+	}
+
+	ol li {
+		counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+		counter-increment: list-0;
+	}
+
+	li::before {
+		width: 2em !important;
+	}
+
+	li.ql-indent-2::before {
+		width: 2.5em !important;
+	}
+
+	li.ql-indent-3::before {
+		width: 3em !important;
+	}
+
+	ol,
+	ul {
+		padding-left: 0 !important;
+	}
+
+	ul > li::before {
+		content: '\2022';
+		margin-left: -1.5em;
+		margin-right: 0.3em;
+		text-align: right;
+	}
+
+	li::before {
+		display: inline-block;
+		white-space: nowrap;
+		margin-left: -1.5em;
+		margin-right: 0.3em;
+		text-align: right;
+	}
+
+	ol li,
+	ul li {
+		padding-left: 1.5em;
+	}
+
+	li.ql-indent-1 {
+		padding-left: 4.5em;
+		counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+		counter-increment: list-1;
+	}
+
+	li.ql-indent-2 {
+		padding-left: 7.5em;
+		counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+		counter-increment: list-2;
+	}
+
+	li.ql-indent-3 {
+		padding-left: 10.5em;
+		counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
+		counter-increment: list-3;
+	}
+
+	ol li:before {
+		content: counter(list-0, decimal) '. ';
+	}
+
+	ol li.ql-indent-1:before {
+		content: counter(list-0, decimal) '.' counter(list-1, decimal) '. ' !important;
+	}
+
+	ol li.ql-indent-2:before {
+		content: counter(list-0, decimal) '.' counter(list-1, decimal) '.' counter(list-2, decimal) '. ' !important;
+	}
+
+	ol li.ql-indent-3:before {
+		content: counter(list-0, decimal) '.' counter(list-1, decimal) '.' counter(list-2, decimal) '.'
+			counter(list-3, decimal) '. ' !important;
+	}
+}

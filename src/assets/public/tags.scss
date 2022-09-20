@@ -1,0 +1,13 @@
+.item__tag {
+	padding: 0.05rem 0.9rem;
+	border-radius: 1rem;
+	font-size: 0.75rem;
+	color: var(--green);
+	border: 1px solid var(--green);
+	display: inline-block;
+
+	&.filled {
+		color: white;
+		background-color: var(--green);
+	}
+}

@@ -1,0 +1,29 @@
+.public {
+	a,
+	button {
+		&.btn {
+			box-shadow: none;
+			font-weight: 400;
+			padding: 0.5rem 2.5rem;
+			display: inline-block;
+		}
+
+		&.btn-primary {
+			background: var(--red);
+			color: white;
+			border: 1px solid var(--red);
+			&:hover {
+				background: var(--red);
+			}
+		}
+
+		&.btn-secondary {
+			color: var(--red);
+			background: white;
+			border: 1px solid var(--red);
+			&:hover {
+				background: white;
+			}
+		}
+	}
+}

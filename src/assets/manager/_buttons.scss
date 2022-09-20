@@ -1,0 +1,19 @@
+.btn {
+    @apply py-2 px-4 rounded shadow-md shadow-gray-300 bg-neutral-200 font-bold;
+
+    &:hover {
+        @apply bg-neutral-300;
+    }
+
+    &-primary {
+        color: var(--green);
+    }
+
+    &-secondary {
+        @apply text-sky-700;
+    }
+
+    &-danger {
+        @apply text-rose-700;
+    }
+}

@@ -1,0 +1,10 @@
+// Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//
+@import 'manager/variables';
+@import 'manager/global';
+@import 'manager/buttons';
+@import 'manager/components';

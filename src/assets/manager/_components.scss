@@ -1,0 +1,8 @@
+.sticky-element {
+	@apply bg-white p-5 mb-3 flex items-center justify-between sticky shadow-lg z-10;
+	top: 3.4rem;
+}
+
+.ql-editor {
+	min-height: 200px !important;
+}
