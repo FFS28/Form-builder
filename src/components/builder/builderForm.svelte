@@ -303,7 +303,8 @@
                     class="flex items" 
                     on:dragstart={event => dragStart(event, i)}
                     draggable={true}>
-                    <Fa icon={item.icons} class="icon-width" /> {item.name}
+                    <span><Fa icon={item.icons} class="icon-width" /></span>
+                     {item.name}
                 </div>
             {/each}
         </div>
