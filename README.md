@@ -1,4 +1,4 @@
-# This is Form builder app using Svelte
+# This is Form builder project
 
 ## Developing
 
